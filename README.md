@@ -1,10 +1,10 @@
-# SSN (Social Security Number) Validator 
+# TR ID Validator 
 
-![SSN Validator](./ssn.gif.gif)
+![TR ID Validator](./idv.gif)
 
 ## Description
 
-The purpose of this code is to create a function that will check the given SSN (Social Security Number) is valid or not valid.
+Purpose of the this code is to write a code that given TR Identity Number, returns valid or invalid.
 
 ## Technologies:
 
@@ -14,4 +14,4 @@ The purpose of this code is to create a function that will check the given SSN (
 
 ## Demo
 
-[SSN Validator](https://meryemsenturk.github.io/SSN-Validator/)
+[TR ID Validator](https://meryemsenturk.github.io/TR-ID-Validator/)
