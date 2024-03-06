@@ -1,6 +1,9 @@
 const kontrolButonu = document.querySelector("#btn");
+
 kontrolButonu.addEventListener("click", () => {
+
   //* TC Kimlik Numarası Al
+
   const tcKimlik = document.getElementById("tcKimlik").value;
   const sonucParagrafi = document.getElementById("sonuc");
   if (!tcKimlik) {
@@ -8,6 +11,7 @@ kontrolButonu.addEventListener("click", () => {
     sonucParagrafi.style.color = "red";
     return;
   }
+
   const tcKimlikNumarası = parseInt(tcKimlik);
   if (
     isNaN(tcKimlikNumarası) ||
@@ -18,6 +22,7 @@ kontrolButonu.addEventListener("click", () => {
     sonucParagrafi.style.color = "red";
     return;
   }
+
   //* TC Kimlik numarasını geçerliliğini kontrol et
   const geçerliMi = tcKimlikNumarasıGeçerliMi(tcKimlikNumarası);
 
@@ -31,9 +36,18 @@ kontrolButonu.addEventListener("click", () => {
     sonucParagrafi.style.color = "red";
   }
 });
+
+// document.addEventListener("keydown", (e) =>{
+//   if(e.key === "Enter"){
+//     kontrolButonu.click()
+//   }
+// })
+
 const tcKimlikNumarasıGeçerliMi = (numara) => {
+
   //TC Kimlik numarasını diziye dönüştür
   const strNumara = numara.toString();
+
   //*TC Kimlik numarasının geçerliliğini kontrol etmek için gerekli hesaplamalar
   let toplam1 = 0;
   let toplam2 = 0;
